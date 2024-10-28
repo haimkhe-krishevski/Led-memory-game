@@ -1,0 +1,53 @@
+/* עיצוב הקונטיינר */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* צמצום המרווח בין הדיבים */
+    width: 250px;
+    /* רוחב הקונטיינר */
+    height: 250px;
+    /* גובה הקונטיינר */
+    margin: 50px auto;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    /* יישור מלמעלה למטה */
+}
+
+/* עיצוב הדיבים */
+.box {
+    width: 100px;
+    height: 100px;
+    /* גובה הדיבים */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    /* transition: opacity 0.5s ease-in-out; */
+}
+
+/* עיגול במרכז */
+.circle {
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* ממקד את העיגול בדיוק במרכז */
+    z-index: 10;
+}
+
+.player {
+    background-color: #4CAF50;
+}
+
+/* אפקט הבהוב */
+.flash {
+    opacity: 0.4;
+}
