@@ -12,6 +12,34 @@
         <div class="circle"></div>
     </div>
 
+    <!-- כאן מתחיל קטע קוד של השהיית ההתחלה -->
+    
+    <div id="instructions" style="text-align: center;">
+        <h1>!לחץ לפי הסדר על האור המהבהב</h1>
+    </div>
+    
+     <!-- כפתור ריסטרט -->
+     <button onclick="restartGame()" style="display: block; margin: 20px auto;">רענן</button>
+
+
+    <script>
+        function startGame() {
+            document.getElementById("instructions").style.display = 'none'; // הסתרת הוראות
+            console.log("המשחק מתחיל עכשיו!");
+            // כאן תתחיל את האור המהבהב
+            play()
+
+        }
+    
+        window.onload = function() {
+            // הצגת ההוראות למשך 2 שניות לפני התחלת המשחק
+            setTimeout(startGame, 2000);
+        };
+    </script>
+    
+
+    <!-- כאן מסתיים -->
+
     <script src="./script.js"></script> <!-- קישור לקובץ JS -->
 </body>
 </html>

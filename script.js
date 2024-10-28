@@ -139,8 +139,20 @@ function play() {
 
 }
 
+// העברנו את play() לקובץ ה html במקום שבו יצרנו את ההשהיה לפני תחילת המשחק וכאן כיבינו (בשורה מתחת)
+// play()
 
-play()
+
+function restartGame() {
+    location.reload();
+}
+
+
+//כאן יוגדר שבפתיחת האתר תהיה המתנה של 2 שניות לפני תחילת המשחק
+
+// window.onload = function() {
+//     setTimeout(play, 2000); // 2000 מילישניות = 2 שניות
+// };
 
 
 
